@@ -10,7 +10,7 @@ interface Props {
 // Use React.FunctionComponent or React.FC to define the function component
 const Hero: React.FunctionComponent<Props> = ({ name }) => {
   return (
-    <div className="flex flex-col gap-8 justify-center items-center py-[120px] px-8 lg:flex-row">
+    <div className="flex flex-col gap-8 justify-center items-center py-[120px] px-8 lg:px-20 lg:flex-row">
       <h1 className="font-['Alerion-Black'] uppercase text-center lg:text-8xl ">
         Hello, I&apos;m {name}
       </h1>

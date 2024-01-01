@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Image from "next/image";
+import Skills from "@/components/Skills";
 
 interface Props {
   name: string;
@@ -11,6 +11,7 @@ export default function Home() {
       <div className="  w-full items-center justify-between font-mono text-sm ">
         <Header />
         <Hero name="Valeri" />
+        <Skills />
       </div>
     </main>
   );
