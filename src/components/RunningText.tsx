@@ -11,9 +11,10 @@ import {
 } from "framer-motion";
 import { wrap } from "@motionone/utils";
 import styled from "styled-components";
+import { ReactNode } from "react";
 
 interface RunningTextProps {
-  children: string;
+  children: ReactNode;
   baseVelocity?: number;
   $dark?: boolean;
 }
@@ -88,7 +89,7 @@ const Parralex = styled.div`
 
 const Scroller = styled(motion.div)<{ $dark?: boolean }>`
   font-weight: 600;
-  color: #1E1E1E;
+  color: #1e1e1e;
   font-size: 14px;
   line-height: normal;
   display: flex;
