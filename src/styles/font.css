@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Alerion-Black";
+  src: url(/fonts/Alerion-Black.otf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Alerion-Bold";
+  src: url(/fonts/Alerion-Bold.otf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Alerion-Light";
+  src: url(/fonts/Alerion-Light.otf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Alerion-Regular";
+  src: url(/fonts/Alerion-Regular.otf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Alerion-SemiBold";
+  src: url(/fonts/Alerion-SemiBold.otf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Alerion-Thin";
+  src: url(/fonts/Alerion-Thin.otf) format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Alerion-UltraLight";
+  src: url(/fonts/Alerion-UltraLight.otf) format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Alerion-UltraLightItalic";
+  src: url(/fonts/Alerion-UltraLightItalic.otf) format("truetype");
+}
