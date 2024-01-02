@@ -15,7 +15,7 @@ const Hero: React.FunctionComponent<Props> = ({ name }) => {
   return (
     <div className="flex flex-col gap-8 justify-center items-center py-[50px] px-8 lg:px-20 lg:flex-row">
       <FadeIn>
-        <h1 className="font-['Alerion-Black'] uppercase text-center lg:text-8xl ">
+        <h1 className="font-['Alerion-Black'] text-white uppercase text-center lg:text-8xl ">
           Hello, I&apos;m {name}
         </h1>
       </FadeIn>
@@ -30,7 +30,7 @@ const Hero: React.FunctionComponent<Props> = ({ name }) => {
           </FadeIn>
         </div>
         <FadeIn>
-          <h2 className="font-['Alerion'] uppercase text-base	text-center	lg:text-xl	">
+          <h2 className="font-['Alerion'] uppercase text-white text-base	text-center	lg:text-xl	">
             <TypeAnimation
               sequence={[
                 "A graphic designer", // Types 'One'

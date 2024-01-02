@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Citrus",
+    "year": "2021",
+    "description": "This is project 1",
+    "image": "/assets/works/citrus.png",
+    "link": "https://www.behance.net/gallery/177690035/Xtender-Citrus-Ultra"
+  },
+  {
+    "name": "Dashboard",
+    "year": "2022",
+    "description": "This is project 2",
+    "image": "/assets/works/dashboard.png",
+    "link": "https://www.behance.net/gallery/167257457/Task-Management-Dashboard"
+  },
+  {
+    "name": "Linus",
+    "year": "2023",
+    "description": "This is project 3",
+    "image": "/assets/works/linus.png",
+    "link": "https://www.behance.net/gallery/184413613/LINUS-LED-Rechargeable-Sensor-Headlamp"
+  },
+  {
+    "name": "Save planet",
+    "year": "2023",
+    "description": "This is project 4",
+    "image": "/assets/works/girl.png",
+    "link": "https://www.behance.net/gallery/154055709/STOP-KILLING-THE-PLANET"
+  }
+]

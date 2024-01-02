@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import SelectedWork from "@/components/SelectedWork";
 import Skills from "@/components/Skills";
 
 interface Props {
@@ -12,6 +13,7 @@ export default function Home() {
         <Header />
         <Hero name="Valeri" />
         <Skills />
+        <SelectedWork />
       </div>
     </main>
   );
