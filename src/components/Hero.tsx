@@ -25,7 +25,7 @@ const Hero: React.FunctionComponent<Props> = ({ name }) => {
             <Image
               src={Profile}
               alt="Profile"
-              className="rounded-full w-[153px] h-[153px] lg:w-[278px] lg:h-[278px]"
+              className="rounded-full w-[153px] h-[153px] lg:w-[278px] lg:h-[278px] object-cover		"
             />
           </FadeIn>
         </div>
