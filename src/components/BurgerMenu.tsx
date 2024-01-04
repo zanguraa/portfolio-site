@@ -6,9 +6,9 @@ interface HeaderProps {
 
 const BurgerMenu = ({ onBurgerClick }: HeaderProps) => {
   return (
-    <div className="flex w-full h-screen z-10 py-20 justify-center items-start bg-[#1E1E1E] absolute top-0">
-      <nav className=" flex flex-col gap-8 ">
-        <a className="text-2xl	text-white" href="#">
+    <div className="flex w-full h-screen z-10  justify-end items-start absolute top-0 backdrop-blur-lg ">
+      <nav className=" flex flex-col gap-8 w-[90%] h-screen items-center bg-[#1E1E1E] py-20 ">
+        <a className="text-2xl	text-white" href="/">
           Home
         </a>
         <a className="text-2xl	text-white" href="#">
@@ -17,7 +17,7 @@ const BurgerMenu = ({ onBurgerClick }: HeaderProps) => {
         <a className="text-2xl	text-white" href="#">
           Works
         </a>
-        <a className="text-2xl	text-white" href="#">
+        <a className="text-2xl	text-white" href="/contact">
           Contact
         </a>
       </nav>

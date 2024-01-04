@@ -17,8 +17,7 @@ export default function Home() {
   const [isBurgerMenuVisible, setBurgerMenuVisible] = useState(false);
 
   const toggleBurgerMenu = () => {
-    setBurgerMenuVisible(!isBurgerMenuVisible);
-    console.log("Burger menu is visible: ", isBurgerMenuVisible);
+    setBurgerMenuVisible((prev) => !prev);
   };
 
   return (
@@ -26,12 +25,12 @@ export default function Home() {
       <main className="flex min-h-screen flex-col items-center justify-between bg-[#1E1E1E]">
         <div className="w-full items-center justify-between font-mono text-sm">
           <Header onBurgerClick={toggleBurgerMenu} />
-          <Hero name="Barbara" />
-          <Skills />
-          <SelectedWork />
           {isBurgerMenuVisible && (
             <BurgerMenu onBurgerClick={toggleBurgerMenu} />
           )}
+          <Hero name="Barbara" />
+          <Skills />
+          <SelectedWork />
           <AccordionAbout />
           <Contact />
         </div>

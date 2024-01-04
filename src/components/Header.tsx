@@ -4,16 +4,20 @@ import Image from "next/image";
 import FadeIn from "./UseFadeIn";
 import Logo from "../assets/icons/logo.png";
 import Burger from "../assets/icons/menu_burger.png";
+import BurgerMenu from "./BurgerMenu";
 
-interface HeaderProps {
-  onBurgerClick: () => void; // Define the prop type for onBurgerClick
+interface Props {
+  onBurgerClick: () => void;
 }
 
-function Header({ onBurgerClick }: HeaderProps) {
+function Header({ onBurgerClick }: Props) {
   return (
     <FadeIn>
-      <div className="flex w-full justify-between p-6 lg:py-8 lg:px-20">
-        <Image src={Logo} alt="Logo" width={32} height={32} />
+      <div className="flex w-full h-auto justify-between p-6 lg:py-8 lg:px-20">
+        <a href="/">
+          <Image src={Logo} alt="Logo" width={32} height={32} />
+        </a>
+
         <Image
           src={Burger}
           alt="Burger"
@@ -22,11 +26,12 @@ function Header({ onBurgerClick }: HeaderProps) {
           className="lg:hidden"
           onClick={onBurgerClick} // Call the onBurgerClick prop on click
         />
+
         <nav className="hidden flex gap-8 lg:flex">
-          <a href="#">Home</a>
+          <a href="/">Home</a>
           <a href="#">About</a>
           <a href="#">Works</a>
-          <a href="#">Contact</a>
+          <a href="/contact">Contact</a>
         </nav>
       </div>
     </FadeIn>

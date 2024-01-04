@@ -14,7 +14,7 @@ const Contact = () => {
     },
     {
       name: "Dribble",
-      link: "https://dribbble.com/barbararosaa",
+      link: "https://dribbble.com/barbarajaniashvili",
     },
     {
       name: "Linkedin",
