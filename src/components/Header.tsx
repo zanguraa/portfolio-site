@@ -14,7 +14,7 @@ function Header({ onBurgerClick }: Props) {
   return (
     <FadeIn>
       <div className="flex w-full h-auto justify-between p-6 lg:py-8 lg:px-20">
-        <a href="/">
+        <a href="/" className="hover:animate-spin">
           <Image src={Logo} alt="Logo" width={32} height={32} />
         </a>
 
@@ -28,10 +28,18 @@ function Header({ onBurgerClick }: Props) {
         />
 
         <nav className="hidden flex gap-8 lg:flex">
-          <a href="/">Home</a>
-          <a href="#">About</a>
-          <a href="#">Works</a>
-          <a href="/contact">Contact</a>
+          <a href="/" className="hover:text-lime-500 hover:scale-x-125">
+            Home
+          </a>
+          <a href="#" className="hover:text-lime-500 hover:scale-x-125">
+            About
+          </a>
+          <a href="#" className="hover:text-lime-500 hover:scale-x-125">
+            Works
+          </a>
+          <a href="contact" className="hover:text-lime-500 hover:scale-x-125	">
+            Contact
+          </a>
         </nav>
       </div>
     </FadeIn>

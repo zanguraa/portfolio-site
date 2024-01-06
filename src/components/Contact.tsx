@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import circleArrow from "../assets/icons/circle_arrow.png";
+import FadeIn from "./UseFadeIn";
 
 const Contact = () => {
   const contact = [
@@ -29,21 +30,25 @@ const Contact = () => {
 
   return (
     <div className="flex flex-col items-center justify-center bg-[#B8FF20] py-20 px-6 gap-8">
-      <h1 className="text-5xl text-black bold font-['Alerion-Bold'] uppercase text-center">
-        LET’S WORK TOGETHER
-      </h1>
-      <div className="flex w-full flex-col items-start justify-center max-w-[600px]">
-        {contact.map((contact, index) => (
-          <div
-            key={index}
-            className="flex flex-row justify-between w-full border-b-[1px] border-black mb-4 pb-4"
-          >
-            <h2 className="text-xl text-black uppercase">{contact.name}</h2>
-            <a href={contact.link} target="black">
-              <Image src={circleArrow} alt="circleArrow" />
-            </a>
-          </div>
-        ))}
+      <FadeIn>
+        <h1 className="text-5xl text-black bold font-['Alerion-Bold'] uppercase text-center">
+          LET’S WORK TOGETHER
+        </h1>
+      </FadeIn>
+      <div className="flex w-full flex-col  justify-center max-w-[600px]">
+        <FadeIn>
+          {contact.map((contact, index) => (
+            <div
+              key={index}
+              className="flex flex-row justify-between w-full border-b-[1px] border-black mb-4 pb-4"
+            >
+              <h2 className="text-xl text-black uppercase">{contact.name}</h2>
+              <a href={contact.link} target="black">
+                <Image src={circleArrow} alt="circleArrow" />
+              </a>
+            </div>
+          ))}
+        </FadeIn>
       </div>
     </div>
   );

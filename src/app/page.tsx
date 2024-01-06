@@ -8,6 +8,7 @@ import BurgerMenu from "../components/BurgerMenu"; // Import your BurgerMenu com
 import { NextUIProvider } from "@nextui-org/react";
 import AccordionAbout from "@/components/AccordionAbout";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 interface Props {
   name: string;
@@ -33,6 +34,7 @@ export default function Home() {
           <SelectedWork />
           <AccordionAbout />
           <Contact />
+          <Footer />
         </div>
       </main>
     </NextUIProvider>

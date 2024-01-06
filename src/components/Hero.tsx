@@ -19,13 +19,13 @@ const Hero: React.FunctionComponent<Props> = ({ name }) => {
           Hello, I&apos;m {name}
         </h1>
       </FadeIn>
-      <div className="flex w-full flex-col gap-8 justify-center items-center ">
-        <div className="flex justify-center items-start ">
+      <div className="flex w-full flex-col gap-10 justify-center items-center ">
+        <div className="flex justify-center items-center px-4 py-4">
           <FadeIn>
             <Image
               src={Profile}
               alt="Profile"
-              className="rounded-full w-[153px] h-[153px] lg:w-[278px] lg:h-[278px] object-cover		"
+              className="rounded-full w-[153px] lg:w-[278px] object-cover	hover:scale-150		"
             />
           </FadeIn>
         </div>
