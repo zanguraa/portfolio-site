@@ -14,10 +14,10 @@ const BurgerMenu = ({ onBurgerClick }: HeaderProps) => {
         <a className="text-2xl	text-white" href="#">
           About
         </a>
-        <a className="text-2xl	text-white" href="#">
+        <a className="text-2xl	text-white" href="works">
           Works
         </a>
-        <a className="text-2xl	text-white" href="/contact">
+        <a className="text-2xl	text-white" href="contact">
           Contact
         </a>
       </nav>

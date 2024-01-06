@@ -34,7 +34,7 @@ function Header({ onBurgerClick }: Props) {
           <a href="#" className="hover:text-lime-500 hover:scale-x-125">
             About
           </a>
-          <a href="#" className="hover:text-lime-500 hover:scale-x-125">
+          <a href="/works" className="hover:text-lime-500 hover:scale-x-125">
             Works
           </a>
           <a href="contact" className="hover:text-lime-500 hover:scale-x-125	">
