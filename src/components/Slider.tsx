@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 
@@ -36,7 +37,7 @@ function App() {
     setCurrentIndex(newIndex);
   };
 
-  const goToSlide = (slideIndex: number) => {
+  const goToSlide = (slideIndex: React.SetStateAction<number>) => {
     setCurrentIndex(slideIndex);
   };
 
@@ -48,7 +49,11 @@ function App() {
       ></div>
       {/* Left Arrow */}
       <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-        <BsChevronCompactLeft onClick={prevSlide} size={30} />
+        <BsChevronCompactLeft
+          onClick={prevSlide}
+          size={30}
+          style={{ color: "#B8FF20" }}
+        />
       </div>
       {/* Right Arrow */}
       <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
@@ -59,9 +64,18 @@ function App() {
           <div
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}
-            className="text-2xl cursor-pointer"
+            className={`text-2xl cursor-pointer ${
+              currentIndex === slideIndex ? "text-green-500" : "text-white"
+            }`}
           >
             <RxDotFilled />
+            <Image
+              src={slide.url}
+              alt="slide"
+              width={200}
+              height={200}
+              layout="responsive"
+            />
           </div>
         ))}
       </div>
